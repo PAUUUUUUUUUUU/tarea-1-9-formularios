@@ -40,6 +40,24 @@
       <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
       <br>
 
+      <label for="nacimiento">Fecha de nacimiento:</label>
+      <!-- date: permite elegir una fecha. -->
+      <input type="date" id="nacimiento" name="nacimiento">
+      <br>
+
+      <label for="foto">Foto:</label>
+      <!-- file: permite seleccionar un archivo local. -->
+      <input type="file" id="foto" name="foto">
+      <br>
+
+      <label for="curso">Curso:</label>
+      <!-- value: establece el valor inicial del control; readonly: impide modificar el valor desde el formulario. -->
+      <input type="text" id="curso" name="curso" value="2026-27" readonly>
+      <br>
+
+      <label for="centro">Centro:</label>
+      <!-- disabled: desactiva el control y hace que no se incluya en el envío del formulario. -->
+      <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
     </fieldset>
   </form>
 </body>
