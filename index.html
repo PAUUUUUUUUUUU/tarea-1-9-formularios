@@ -176,5 +176,16 @@
   </form>
   <p>OpenStreetMap busca la ciudad elegida, muestra a la izquierda los lugares coincidentes y centra el mapa en el primero.</p>
 
+  <h2>Validador</h2>
+  <form action="https://validator.w3.org/nu/" method="get">
+    <label for="direccion-web">Dirección de la web:</label>
+    <!-- url: solicita una dirección web. -->
+    <input type="url" id="direccion-web" name="doc" value="https://pauuuuuuuuuuu.github.io/tarea-1-9-formularios/">
+    <input type="checkbox" id="ver-codigo" name="showsource" value="yes">
+    <label for="ver-codigo">Ver el código</label>
+    <button type="submit">Validar HTML</button>
+  </form>
+  <p>El validador descarga la página y comprueba si su HTML cumple el estándar. Si encuentra errores, indica la línea; si no, muestra «Document checking completed». Al marcar «Ver el código», también incluye el código con las líneas numeradas.</p>
+
 </body>
 </html>
