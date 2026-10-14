@@ -159,5 +159,22 @@
   </form>
   <p>Si escribes el título de un artículo, como «España», Wikipedia puede abrir ese artículo; si escribes otra frase, muestra resultados. El navegador envía la búsqueda en el parámetro «search» de la URL. Las sugerencias de la lista son opcionales y puedes escribir cualquier texto.</p>
 
+  <h2>Mapa</h2>
+  <form action="https://www.openstreetmap.org/search" method="get">
+    <label for="ciudad">Ciudad:</label>
+    <select id="ciudad" name="query">
+      <optgroup label="Alicante">
+        <option value="Alicante">Alicante</option>
+        <option value="Elche">Elche</option>
+      </optgroup>
+      <optgroup label="Valencia">
+        <option value="Valencia">Valencia</option>
+        <option value="Gandía">Gandía</option>
+      </optgroup>
+    </select>
+    <button type="submit">Buscar en el mapa</button>
+  </form>
+  <p>OpenStreetMap busca la ciudad elegida, muestra a la izquierda los lugares coincidentes y centra el mapa en el primero.</p>
+
 </body>
 </html>
