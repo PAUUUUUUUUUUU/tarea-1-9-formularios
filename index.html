@@ -59,6 +59,28 @@
       <!-- disabled: desactiva el control y hace que no se incluya en el envío del formulario. -->
       <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
     </fieldset>
+    <fieldset>
+      <legend>Preferencias</legend>
+
+      <p>Turno:</p>
+      <!-- radio: permite escoger una opción de un grupo de opciones excluyentes. -->
+      <input type="radio" id="manana" name="turno" value="manana">
+      <label for="manana">Mañana</label>
+      <input type="radio" id="tarde" name="turno" value="tarde">
+      <label for="tarde">Tarde</label>
+      <br>
+
+      <p>Intereses:</p>
+      <!-- checkbox: permite marcar o desmarcar una opción independiente. -->
+      <input type="checkbox" id="programacion" name="intereses" value="programacion">
+      <label for="programacion">Programación</label>
+      <input type="checkbox" id="diseno" name="intereses" value="diseno">
+      <label for="diseno">Diseño</label>
+      <input type="checkbox" id="redes" name="intereses" value="redes">
+      <label for="redes">Redes</label>
+      <br>
+
+    </fieldset>
   </form>
 </body>
 </html>
