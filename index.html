@@ -111,6 +111,25 @@
       <input type="month" id="mes" name="mes">
       <br>
 
+      <label for="modulos">Módulos:</label>
+      <!-- select: crea una lista de opciones; multiple: permite seleccionar más de una opción. -->
+      <select id="modulos" name="modulos" multiple>
+        <!-- optgroup: agrupa opciones relacionadas; label: nombra el grupo de opciones. -->
+        <optgroup label="Primero">
+          <!-- option: representa una opción seleccionable; selected: marca inicialmente la opción. -->
+          <option value="programacion" selected>Programación</option>
+          <option value="bases-de-datos">Bases de datos</option>
+        </optgroup>
+        <optgroup label="Segundo">
+          <option value="desarrollo-web">Desarrollo web</option>
+          <option value="despliegue">Despliegue de aplicaciones</option>
+        </optgroup>
+      </select>
+      <br>
+
+      <label for="comentarios">Comentarios:</label>
+      <!-- textarea: permite introducir texto en varias líneas; rows: determina las filas visibles; cols: determina el ancho visible en caracteres. -->
+      <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
     </fieldset>
   </form>
 </body>
