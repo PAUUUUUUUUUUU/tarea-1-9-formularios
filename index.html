@@ -190,5 +190,8 @@
   <h2>¿Qué problema de seguridad descubres en el historial por haber enviado la inscripción con GET? ¿Qué método recomienda el artículo para un formulario como este y por qué?</h2>
   <p>Con GET, los datos de la inscripción quedan escritos en la URL y pueden aparecer en el historial del navegador. Así, otra persona que use el mismo dispositivo podría ver información personal e incluso la contraseña de prueba. Para un formulario de inscripción, el artículo recomienda POST porque los datos se envían en el cuerpo de la petición y no quedan expuestos en la URL. POST no cifra los datos: también hace falta HTTPS y un servidor seguro.</p>
 
+  <h2>¿Qué ocurre al enviar la inscripción con POST? Según el artículo, ¿qué tendría que haber en el servidor para procesar esos datos?</h2>
+  <p>Al enviar el formulario con POST en GitHub Pages, el servidor devuelve el error «405 Not Allowed»: no acepta ni procesa esa petición para la página estática. Para procesar los datos tendría que haber en el servidor un programa o script que recibiera la petición POST y gestionara la información.</p>
+
 </body>
 </html>
