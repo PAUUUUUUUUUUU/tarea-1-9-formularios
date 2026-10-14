@@ -131,6 +131,33 @@
       <!-- textarea: permite introducir texto en varias líneas; rows: determina las filas visibles; cols: determina el ancho visible en caracteres. -->
       <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
     </fieldset>
+    <!-- submit: envía el formulario al destino configurado. -->
+    <input type="submit" value="Enviar">
+    <!-- reset: restaura los controles a sus valores iniciales. -->
+    <input type="reset" value="Restablecer">
+    <!-- button: crea un botón sin una acción de envío o restablecimiento predeterminada. -->
+    <input type="button" value="Botón input">
+    <!-- image: crea un botón de envío gráfico; src: indica la dirección de la imagen; alt: proporciona un texto alternativo. -->
+    <input type="image" src="enviar.svg" alt="Enviar formulario">
+    <!-- button: crea un botón; type: define su comportamiento. -->
+    <button type="submit">Enviar con button</button>
+    <button type="reset">Restablecer con button</button>
+    <button type="button">Botón button</button>
   </form>
+  <h2>Wikipedia</h2>
+  <!-- search: crea un campo de búsqueda; list: enlaza el campo con una lista de sugerencias. -->
+  <form action="https://es.wikipedia.org/w/index.php" method="get">
+    <label for="busqueda-wikipedia">Buscar en Wikipedia:</label>
+    <input type="search" id="busqueda-wikipedia" name="search" list="sugerencias-wikipedia">
+    <!-- datalist: ofrece sugerencias opcionales para un campo de entrada. -->
+    <datalist id="sugerencias-wikipedia">
+      <option value="Formulario web">
+      <option value="HTML">
+      <option value="Protocolo de transferencia de hipertexto">
+    </datalist>
+    <button type="submit">Buscar</button>
+  </form>
+  <p>Si escribes el título de un artículo, como «España», Wikipedia puede abrir ese artículo; si escribes otra frase, muestra resultados. Las sugerencias de la lista son opcionales y puedes escribir cualquier texto.</p>
+
 </body>
 </html>
