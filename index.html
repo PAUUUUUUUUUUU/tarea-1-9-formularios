@@ -16,6 +16,30 @@
       <legend>Datos personales by Pau</legend>
 
       <!-- label: identifica un control; for: lo asocia con el id indicado. -->
+      <label for="nombre">Nombre:</label>
+      <!-- input: crea un control de formulario; type: define el tipo de control; id: identifica el control en el documento; name: identifica el dato enviado. -->
+      <!-- text: permite introducir una línea de texto. -->
+      <!-- placeholder: muestra una sugerencia cuando el campo está vacío; required: exige completar el campo; autofocus: enfoca el campo al cargar la página; size: establece el ancho visible aproximado; maxlength: limita la cantidad de caracteres. -->
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required autofocus size="30" maxlength="40">
+      <br>
+
+      <label for="contrasena">Contraseña:</label>
+      <!-- password: oculta visualmente los caracteres introducidos. -->
+      <!-- minlength: establece la cantidad mínima de caracteres. -->
+      <input type="password" id="contrasena" name="contrasena" minlength="8">
+      <br>
+
+      <label for="correo">Correo electrónico:</label>
+      <!-- email: solicita una dirección de correo y permite validar su formato. -->
+      <input type="email" id="correo" name="correo" required>
+      <br>
+
+      <label for="telefono">Teléfono:</label>
+      <!-- tel: solicita un número de teléfono. -->
+      <!-- pattern: establece una expresión que debe cumplir el valor. -->
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+      <br>
+
     </fieldset>
   </form>
 </body>
